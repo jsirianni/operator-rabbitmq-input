@@ -1,0 +1,9 @@
+1. ack message after it is sent by output operator
+2. tests
+3. parser more tests
+
+
+
+bench:
+- parser 270,000 per second
+- 1 worker does 14.5k per second

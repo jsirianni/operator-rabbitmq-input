@@ -28,13 +28,13 @@ type QueueInputConfig struct {
     // required
     Username   string `json:"username,omitempty" yaml:"username,omitempty"`
     Password   string `json:"password,omitempty" yaml:"password,omitempty"`
-    Address    string `json:"address,omitempty" yaml:"address,omitempty"`
     RoutingKey string `json:"routing_key,omitempty" yaml:"routing_key,omitempty"`
 
     // optional
-    Port     string `json:"port,omitempty" yaml:"port,omitempty"`
-    VHost    string `json:"vhost,omitempty" yaml:"vhost,omitempty"`
-    Tag      string `json:"tag,omitempty" yaml:"tag,omitempty"`
+    Address string `json:"address,omitempty" yaml:"address,omitempty"`
+    Port    string `json:"port,omitempty" yaml:"port,omitempty"`
+    VHost   string `json:"vhost,omitempty" yaml:"vhost,omitempty"`
+    Tag     string `json:"tag,omitempty" yaml:"tag,omitempty"`
 }
 
 // Build will build a message queue input operator.
@@ -52,12 +52,12 @@ func (c *QueueInputConfig) Build(context operator.BuildContext) ([]operator.Oper
         return nil, fmt.Errorf("missing required rabbitmq_input parameter 'password'")
     }
 
-    if c.Address == "" {
-        return nil, fmt.Errorf("missing required rabbitmq_input parameter 'address'")
-    }
-
     if c.RoutingKey == "" {
         return nil, fmt.Errorf("missing required rabbitmq_input parameter 'routing_key'")
+    }
+
+    if c.Address == "" {
+        c.Address = "localhost"
     }
 
     if c.Port == "" {

@@ -86,7 +86,4 @@ Generated entries:
 
 ### Testing
 
-See `test/queue/rabbitmq` for:
-- pipeline configuration
-- rabbitmq docker-compose
-- setup and publish scripts
+See `test/README.md` for details

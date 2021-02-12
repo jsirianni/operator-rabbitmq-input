@@ -1,0 +1,9 @@
+pipeline:
+- type: rabbitmq_input
+  username: dev
+  password: dev
+  address: localhost
+  vhost: dev
+  routing_key: webq1
+  tag: devel
+- type: stdout

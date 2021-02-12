@@ -14,3 +14,8 @@ Publish to Rabbitmq
 ```bash
 ./rabbitmq-publish.sh
 ```
+
+Build and run Stanza CLI
+```bash
+./stanza.sh
+```

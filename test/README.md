@@ -1,4 +1,6 @@
-# Usage
+# Test
+
+## Usage
 
 Deploy Rabbitmq
 ```bash
@@ -19,3 +21,8 @@ Build and run Stanza CLI
 ```bash
 ./stanza.sh
 ```
+
+## Load Generation
+
+The package in `load/` can be used to send messages to Rabbitmq. The source can
+be tweaked to increase number of goroutines, or number of messages sent per goroutine.

@@ -6,7 +6,7 @@ import (
     "testing"
     "encoding/json"
 
-    "github.com/open-telemetry/opentelemetry-log-collection/entry"
+    "github.com/observiq/stanza/entry"
 
     "github.com/streadway/amqp"
     "github.com/stretchr/testify/require"

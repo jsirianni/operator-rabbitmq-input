@@ -4,8 +4,8 @@ import (
     "fmt"
 	"context"
 
-	"github.com/open-telemetry/opentelemetry-log-collection/operator"
-	"github.com/open-telemetry/opentelemetry-log-collection/operator/helper"
+	"github.com/observiq/stanza/operator"
+	"github.com/observiq/stanza/operator/helper"
 
     "go.uber.org/zap"
 )

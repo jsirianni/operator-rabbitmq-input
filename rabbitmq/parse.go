@@ -3,7 +3,7 @@ package rabbitmq
 import (
     "time"
 
-    "github.com/open-telemetry/opentelemetry-log-collection/entry"
+    "github.com/observiq/stanza/entry"
 
     "github.com/streadway/amqp"
 )

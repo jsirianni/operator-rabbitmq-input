@@ -4,7 +4,7 @@ An operator for [Stanza](https://github.com/observIQ/stanza) and [OpenTelemetry]
 
 ## `rabbitmq_input` operator
 
-The `tcp_input` operator listens for logs on one or more TCP connections. The operator assumes that logs are newline separated.
+The `rabbitmq_input` operator subscribes to Rabbitmq.
 
 ### Configuration Fields
 
